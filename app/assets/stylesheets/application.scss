@@ -1,0 +1,81 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap";
+ @import url('https://fonts.googleapis.com/css?family=Dosis');
+
+ body {
+  font-family: 'Dosis', sans-serif;
+ }
+
+ .full-height {
+  height: 100vh;
+}
+
+.auth-container {
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+.alert-container {
+  position: fixed;
+}
+
+.post-wrapper {
+  margin: 1rem auto;
+}
+
+.post {
+  // min-height: 30rem;
+  max-height: 30rem;
+  overflow: hidden;
+}
+
+.post-user {
+  font-weight: 700;
+}
+
+.like-icon {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.pagination {
+  font-size: 12px;
+}
+
+.pagination > * {
+  margin-right: 0.1em;
+  padding: 0.3em 0.4em;
+}
+
+.pagination a:hover {
+  background: #202020 none repeat scroll 0 0;
+  text-shadow: 1px 1px 1px #171717;
+}
+
+.pagination a:active {
+  text-shadow: none;
+}
+
+.pagination .current {
+  background: #202020 none repeat scroll 0 0;
+  color: white;
+  text-shadow: 1px 1px 1px #171717;
+}
+
+.pagination .disabled {
+  color: #C0C0C0;
+}
